@@ -8,5 +8,7 @@ var Login = function () {
         alert("login successfully!");
     } else {
         alert("User name or password error.");
+        document.getElementById("account").value ="";//clear input
+        document.getElementById("password").value ="";
     }
 }
