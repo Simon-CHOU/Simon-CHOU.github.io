@@ -35,4 +35,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/_build/html
         publish_branch: gh-pages
-        force_orphan: true  # 使用干净的分支，避免历史冲突
+        force_orphan: true
