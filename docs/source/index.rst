@@ -1,4 +1,4 @@
-欢迎来到 Simon's Blog
+欢迎来到 Simon's Wiki
 ===================
 
 .. toctree::
