@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Simon CHOU 的个人博客'
+project = "Simon's Wiki"
 author = 'Simon CHOU'
 copyright = '2025, Simon CHOU'
 release = '1.0'
@@ -46,7 +46,7 @@ html_theme_options = {
 
 # -- 其他配置 -----------------------------------------------------------------
 html_title = project
-html_short_title = 'Simon CHOU'
+html_short_title = "Simon's Wiki"
 html_show_sourcelink = False
 html_show_sphinx = False
 html_show_copyright = True
