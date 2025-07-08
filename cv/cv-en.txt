@@ -1,0 +1,102 @@
+
+Zhihuan Zhou
+Developer
+Zhihuan excels in designing and optimizing high-performance applications as a
+seasoned Java backend developer with more than five years of experience. He has
+successfully led complex projects and has deep knowledge of distributed systems,
+microservices architectures, and database technologies. He has extensive experience
+in critical domains including banking/credit systems, AI-powered customer service,
+CRM, unified storage, and configuration centers. As a Technical Lead Developer, he
+spearheaded cross-departmental teams to successfully deploy multiple
+mission-critical systems. In addition to his expertise in Java Web Dev, he is also
+developing a strong interest in AIInfra.
+Mail：mrsimonzhou@gmail.com
+Total Experience: 6 years
+Thoughtworks experience
+Schneider Digital Business Platform (mySchneider) -
+Thoughtworks Phase II
+February 2025 - June 2025
+Served as a Senior Consultant in Schneider Phase II at Thoughtworks, leading the
+design/development/evolution of mySchneider's core systems. Focused on
+maintaining/upgrading mySND DEC platform systems, developing new features, and
+optimizing core business logic & data governance.
+1. Refactored cross-system data synchronization logic, clarified inter-system
+permission boundaries/data flows, and completed business process
+consolidation with supplemented documentation.
+2. Designed/implemented cross-system master data cleansing, identified legacy
+data issues, and established an efficient repair mechanism to ensure data
+accuracy/consistency.
+3. Drove pattern-based architecture evolution: reconstructed product line
+approvals via the Chain of Responsibility pattern for dynamic DEC approval
+expansion, enhancing adaptability/maintainability.
+4. Optimized technical solutions: developed SQL CTE and thread pool-based
+approaches for complex statistics, improving backend task efficiency.
+© 2025 Thoughtworks Confidential - do not distribute | 1Tech Stack:
+Agile Methods, Spring Boot, Flyway, MySQL 8, Redis, JPA, MyBatis, K8S
+ZEISS ChatBox Service Based on LLLRAG
+May 2025 - May 2025
+Leveraged Tencent Cloud's LLM RAG capabilities to develop a ChatBox demo. Built
+streaming data interfaces via Webflux for frontend invocation by WeChat Mini
+Program, enabling Q&A based on clients' existing documentation.
+Tech Stack:
+LLM, Webflux, RAG Flow, Dify
+Other experience
+Senior Developer, OneConnect, Chengdu, CN
+July 2019 - December 2024
+OneConnect Financial Technology Co., Ltd. is a technology-as-a-service platform for
+financial institutions. Zhihuan has grown from a new graduate to a senior developer at
+the company, progressing from individual contributions to leading teams and building
+numerous critical systems.
+April 2022 - December 2024
+Zhihuan led the development of the CRM system, a core platform for managing
+customer relationships, sales opportunities, and performance appraisals. He tackled
+challenges like complex data validation and access control design. By optimizing
+template parsing and automating processes, he enhanced maintainability and reduced
+manual effort. He also improved system performance through multithreading and
+Redis caching, leading to a 325x speed increase in customer data queries. Zhihuan's
+contributions earned him the company's Outstanding Employee award in Q1 2024.
+July 2022 - December 2024
+As project lead for the OCSSICSP, Zhihuan ensured secure communication by
+implementing encryption for softphone calls. He also resolved a critical OOM issue,
+© 2025 Thoughtworks Confidential - do not distribute | 2enhancing service stability. Using Spring WebFlux, he built a robust online chat
+module, improving communication efficiency and customer satisfaction.
+May 2022 - December 2024
+Zhihuan led the development of the PMSSCORE, a platform for managing product
+information and employee training. He addressed security concerns by implementing
+global parameter encryption and using TraceId for request tracking. He also improved
+the system's security posture by using Netflix/Zuul Gateway to control access to
+sensitive resources.
+May 2023 - January 2024
+In the CRA project, Zhihuan led a team of 11 to build seven essential systems for the
+launch of a credit reference agency in Hong Kong. He mitigated project risks stemming
+from limited resources and cross-team coordination challenges. He ensured the timely
+launch of the platform by quickly resolving a critical issue with field desensitization.
+December 2020 - January 2023
+Zhihuan led the development of an intelligent customer service system for CIMB
+Philippines. He improved customer information retrieval by implementing concurrent
+queries across five systems. He also enhanced knowledge base accessibility by
+enabling video playback on mobile devices.
+April 2021 - March 2022
+As a core developer for the FPS project, Zhihuan contributed to the development of a
+unified file storage system. He facilitated the migration of file storage from local NAS
+to AWS S3, enabling the storage of terabytes of data.
+May 2020 - October 2021
+Zhihuan played a key role in the development of the Sirius configuration hosting
+platform. He ensured the platform's stability and security by implementing
+configuration encryption and hot updates. He also actively supported the adoption of
+the platform by providing documentation and assistance to developers.
+Skills
+● Programming Languages: Java, SQL, JavaScript, Groovy, Golang
+© 2025 Thoughtworks Confidential - do not distribute | 3● Java Specific Competencies: JDK 1.8, JDK 17, Spring Boot, Spring Cloud,
+Swing, Tomcat, Mybatis, JPA
+● Microservice: ActiveMQ, RabbitMQ, ZooKeeper, Zuul, OpenFeign
+● Databases: PostgreSQL, MySQL, Redis
+● Tools: Maven, Gradle, Docker, Kubernetes
+● Servers: Ubuntu, Red Hat
+● Domains: Customer Service, Insurance, Finance
+● Methodologies: Algile, Scrum, XP
+● AI LLM, RAGflow
+Education
+Southwest University of Science and Technology SWUST, Mianyang, China
+● Bachelor of Engineering, Software Engineering
+● September 2015 - June 2019
