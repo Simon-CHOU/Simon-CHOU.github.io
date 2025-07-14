@@ -29,5 +29,5 @@ git add .
 git commit -m "添加新博文：从汉堡王取餐说开去 (cd20250714)"
 
 # 推送到GitHub
-git push origin main
+git push origin gh-pages
 ```
