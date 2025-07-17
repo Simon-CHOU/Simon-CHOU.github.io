@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="DDD TDD 厘清概念" name="description" />
+<meta content="DDD , TDD, clean architecture" name="keywords" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>代码日记20260630 &mdash; Simon&#39;s Wiki</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=8930e309"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Simon's Wiki
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客文章</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">代码日记</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="first-entry.html">我的第一篇代码日记</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="first-entry.html#id2">学习内容</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-entry.html#id3">代码示例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-entry.html#id4">心得体会</a></li>
+<li class="toctree-l3"><a class="reference internal" href="first-entry.html#id5">下一步计划</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cd20250630.html">代码日记20260630</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cd20250630.html#id2">一级标题</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cd20250630.html#id3">二级标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cd20250714.html">代码日记 - 2025年7月14日 Mon</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cd20250714.html#id2">从汉堡王取餐说开去</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cd20250714.html#id3">技术要点</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cd20250714.html#id4">代码片段</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cd20250714.html#case-study">总结 Case Study</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cd20250714.html#id13">参考资料</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../cv/index.html">简历 (CV)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cv/cv-zh.html">中文简历</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id2">基本信息</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id3">职业概述</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id4">工作经历</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#thoughtworks-2025-02">ThoughtWorks 思特沃克 (2025.02 - 至今)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id5">平安壹账通金融科技有限公司 (2019.07 - 2024.12)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id7">技术技能</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id8">编程语言</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#java">Java技术栈</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id9">微服务技术</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id10">数据库</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id11">开发工具</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id12">业务领域</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id13">方法论</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id14">技术热忱</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id15">代码风格布道</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id16">工具开发</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id17">教育背景</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-zh.html#id18">西南科技大学 (2015.09 - 2019.06)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-zh.html#id19">个人特质</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv/cv-en.html">English Resume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#personal-information">Personal Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#professional-summary">Professional Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#work-experience">Work Experience</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#thoughtworks-february-2025-present">ThoughtWorks (February 2025 - Present)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#ping-an-oneconnect-financial-technology-co-ltd-july-2019-december-2024">Ping An OneConnect Financial Technology Co., Ltd. (July 2019 - December 2024)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#technical-skills">Technical Skills</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#programming-languages">Programming Languages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#java-technology-stack">Java Technology Stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#microservices">Microservices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#databases">Databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#development-tools">Development Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#domain-expertise">Domain Expertise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#methodologies">Methodologies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#technical-passion">Technical Passion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#code-style-advocacy">Code Style Advocacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#tool-development">Tool Development</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#education">Education</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cv/cv-en.html#southwest-university-of-science-and-technology-september-2015-june-2019">Southwest University of Science and Technology (September 2015 - June 2019)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cv/cv-en.html#personal-qualities">Personal Qualities</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cv/index.html#id1">关于我</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">关于我</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#id2">我的技术专长</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#id3">职业亮点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#id4">查看详细简历</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#id5">联系方式</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Simon's Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">代码日记20260630</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>代码日记20260630<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<section id="homework-recall">
+<h2>homework recall<a class="headerlink" href="#homework-recall" title="此标题的永久链接"></a></h2>
+<p>Test Double（测试替身）是Gerard Meszaros在《xUnit Test Patterns》中提出的概念</p>
+<p>进程内架构
+ThoughtWorks 在 2012 年的一篇官方博客《DDD 的战略设计和战术设计》中，就把“进程内架构”一词与 DDD 战术设计并列使用，用来描述“一个服务内部如何划分和组织代码”的那一层设计。文章作者祁兮把 DDD 的讨论范围拆成三个独立范畴，其中在“战术设计”这一范畴里明确写到：
+“这个范畴可以有很多名字，比如 DDD 战术设计、进程内架构、分层架构等。”
+<a class="reference external" href="https://www.thoughtworks.com/zh-cn/insights/blog/architecture/strategy-and-tactical-design-of-ddd">https://www.thoughtworks.com/zh-cn/insights/blog/architecture/strategy-and-tactical-design-of-ddd</a>
+“进程内架构”属于 领域驱动设计（DDD）与 Clean Architecture（整洁架构）交汇后出现的一种“落地风格”，核心思想是：
+在单个进程内部把代码组织成“以领域为中心”的结构，而不是拆成多个分布式服务
+真正把它总结成“进程内架构”这一名称的，是 2023 年以后中文技术社区在Clean DDD 落地文章中提出的，如 2023-10-30 稀土掘金专栏《基于领域中心的进程内架构落地讲解》，以及 2023-02-19 ByteZoneX 社区《领域中心进程内架构的落地方法与实践》
+<a class="reference external" href="https://www.bytezonex.com/archives/MxE_MNae.html">https://www.bytezonex.com/archives/MxE_MNae.html</a>
+<a class="reference external" href="https://juejin.cn/post/7295276751595831348">https://juejin.cn/post/7295276751595831348</a>
+Get Your Hands Dirty on Clean Architecture</p>
+<p>洞见： 当我们谈论DDD时我们在谈论什么
+<a class="reference external" href="https://www.51cto.com/article/722519.html">https://www.51cto.com/article/722519.html</a>
+<a class="reference external" href="https://www.thoughtworks.com/zh-cn/insights/blog/architecture/strategy-and-tactical-design-of-ddd">https://www.thoughtworks.com/zh-cn/insights/blog/architecture/strategy-and-tactical-design-of-ddd</a></p>
+<p>进程内架构设计：
+<a class="reference external" href="https://geekdaxue.co/read/tuoxiemozhibu&#64;nqvbhm/dascs9">https://geekdaxue.co/read/tuoxiemozhibu&#64;nqvbhm/dascs9</a></p>
+</section>
+<section id="summary">
+<h2>summary<a class="headerlink" href="#summary" title="此标题的永久链接"></a></h2>
+<p>老实把 Clean Code, Clean Architecture 读完，才知道面试官究竟在说什么。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2025, Simon CHOU。</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
