@@ -38,7 +38,7 @@ source_suffix = '.rst'
 # -- 主题配置 -----------------------------------------------------------------
 html_theme_options = {
     'navigation_depth': 4,
-    'collapse_navigation': False,
+    'collapse_navigation': True,
     'sticky_navigation': True,
     'includehidden': True,
     'titles_only': False
