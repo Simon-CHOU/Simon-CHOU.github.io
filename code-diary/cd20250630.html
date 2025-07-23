@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh-CN" data-content_root="../">
+<html class="writer-html5" lang="zh-CN">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta content="上半年的最后一天" name="description" />
@@ -15,9 +15,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=f115507d"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=8930e309"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
       <script src="../_static/translations.js?v=beaddf03"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
@@ -90,17 +90,17 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>代码日记20260630<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<h1>代码日记20260630<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
 <section id="id2">
-<h2>一级标题<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<h2>一级标题<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
 <section id="id3">
-<h3>二级标题<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<h3>二级标题<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h3>
 <section id="id4">
-<h4>三级标题<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
+<h4>三级标题<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h4>
 <p>Java21 开发一个生产级别的Spring Boot 3.0 的后端服务项目会遇到哪些问题问题？</p>
 <p>从session搜集问题。</p>
 <p>项目启动报错
-org.springframework.boot.docker.compose.core.ProcessExitException: 'docker version --format {{.Client.Version}}' failed with exit code 1.
+org.springframework.boot.docker.compose.core.ProcessExitException: ‘docker version –format {{.Client.Version}}’ failed with exit code 1.
 原因：项目用了 spring docker compose 但是本地忘了启动 docker desktop</p>
 <p>创建E-R图，但是光考虑符合范式，设计出来的schema 有问题
 xNF范式，反范式，能不能完全搞清楚。最佳实践中的“反范式”能不能枚举出来。
@@ -128,12 +128,12 @@ vn -X flyway:migrate
 mvn flyway:migrate -X
 DML 初始化语句调试，出现了table does not exists 的问题。
 violates foreign key constarint
-violates foreign key constraint &quot;fk_contracts_drug&quot; , 插入A表的数据时关联的B表记录尚不存在。
-violates check constraint &quot;chk_drugs_expiry_date&quot;  ，数据库层面的业务校验（一般来说可以删掉）</p>
+violates foreign key constraint “fk_contracts_drug” , 插入A表的数据时关联的B表记录尚不存在。
+violates check constraint “chk_drugs_expiry_date”  ，数据库层面的业务校验（一般来说可以删掉）</p>
 <p>dml 关联表中，使用了key1-key 联合主键，没有独立id。 问题触及了数据库设计中一个核心的权衡： 使用代理主键（Surrogate Key）还是自然/组合主键（Natural/Composite Key） 。
 单独的id 有利于写更新sql。</p>
 <p>最终还是放弃了雪花，使用了BIGSERIAL</p>
-<p>postgresql 枚举类型的用法。DROP TYPE IF EXISTS ... CASCADE;</p>
+<p>postgresql 枚举类型的用法。DROP TYPE IF EXISTS … CASCADE;</p>
 <p>dml insert 报错： 1、已存在的列没有值。 2、插入的值列、表还不存在。
 修改 dml/ddl flyway 启动执行成功后，记得补充文档 字段、字段类型，约束，id生成方式 等。。
 一些花边：
