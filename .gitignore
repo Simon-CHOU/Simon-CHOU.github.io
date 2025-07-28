@@ -34,6 +34,21 @@ myenv/
 _build/
 .doctrees/
 .buildinfo
+_static/
+*.rst.txt
+*.md.txt
+*.md.html
+objects.inv
+searchindex.js
+genindex.html
+search.html
+# Generated HTML directories (keep only _sources/)
+/about/
+/blog/
+/code-diary/
+/cv/
+# Root level generated files
+/index.html
 
 # IDE and editors
 .vscode/
